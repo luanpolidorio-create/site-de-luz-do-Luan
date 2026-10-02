@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luz em Foco - Física</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ACESSIBILIDADE -->
+    <div class="acessibilidade">
+        <button onclick="aumentarFonte()">A+</button>
+        <button onclick="diminuirFonte()">A-</button>
+        <button onclick="altoContraste()">Alto Contraste</button>
+        <button onclick="lerTexto()">🔊 Ler Página</button>
+        <button onclick="pararLeitura()">⏹ Parar</button>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="icone-luz">💡</div>
+
+        <h1>Luz em Foco</h1>
+
+        <p>
+            Descubra os fenômenos da luz e entenda como eles
+            aparecem no nosso cotidiano.
+        </p>
+
+        <a href="#conceitos" class="botao">
+            Começar
+        </a>
+
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#conceitos">Conceitos</a>
+        <a href="#fenomenos">Fenômenos</a>
+        <a href="#simulacao">Simulação</a>
+        <a href="#cotidiano">Cotidiano</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+
+        <!-- CONCEITOS -->
+        <section id="conceitos">
+
+            <h2>O que é a luz?</h2>
+
+            <p class="introducao">
+                A luz é uma forma de radiação eletromagnética que
+                pode ser percebida pelo olho humano. Ela está presente
+                em diversos momentos do nosso dia.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <span>💡</span>
+                    <h3>Fonte de luz</h3>
+
+                    <p>
+                        É um corpo capaz de emitir luz.
+                        O Sol, uma lâmpada e uma vela são exemplos
+                        de fontes luminosas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span>🌈</span>
+                    <h3>Luz visível</h3>
+
+                    <p>
+                        É a parte do espectro eletromagnético que
+                        pode ser percebida pelos olhos humanos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span>🚀</span>
+                    <h3>Velocidade da luz</h3>
+
+                    <p>
+                        No vácuo, a luz se propaga a aproximadamente
+                        300.000 km/s.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span>〰️</span>
+                    <h3>Ondas</h3>
+
+                    <p>
+                        A luz apresenta características de onda,
+                        como frequência e comprimento de onda.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FENÔMENOS -->
+        <section id="fenomenos">
+
+            <h2>Fenômenos da luz</h2>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <span>🪞</span>
+
+                    <h3>Reflexão</h3>
+
+                    <p>
+                        Acontece quando a luz atinge uma superfície
+                        e retorna para o meio de origem.
+                    </p>
+
+                    <strong>Exemplo:</strong>
+                    espelhos.
+
+                </article>
+
+
+                <article class="card">
+
+                    <span>💧</span>
+
+                    <h3>Refração</h3>
+
+                    <p>
+                        Acontece quando a luz passa de um meio
+                        para outro e muda sua velocidade.
+                    </p>
+
+                    <strong>Exemplo:</strong>
+                    lápis dentro de um copo com água.
+
+                </article>
+
+
+                <article class="card">
+
+                    <span>🌈</span>
+
+                    <h3>Dispersão</h3>
+
+                    <p>
+                        É a separação da luz branca em diferentes
+                        cores.
+                    </p>
+
+                    <strong>Exemplo:</strong>
+                    arco-íris.
+
+                </article>
+
+
+                <article class="card">
+
+                    <span>☀️</span>
+
+                    <h3>Absorção</h3>
+
+                    <p>
+                        Alguns materiais absorvem parte da energia
+                        da luz.
+                    </p>
+
+                    <strong>Exemplo:</strong>
+                    roupas escuras aquecendo ao Sol.
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIMULAÇÃO -->
+        <section id="simulacao">
+
+            <h2>🔬 Simulação da luz</h2>
+
+            <p class="introducao">
+                Escolha um fenômeno para visualizar como a luz
+                se comporta.
+            </p>
+
+            <div class="botoes-simulacao">
+
+                <button onclick="reflexao()">
+                    Reflexão
+                </button>
+
+                <button onclick="refracao()">
+                    Refração
+                </button>
+
+                <button onclick="dispersao()">
+                    Dispersão
+                </button>
+
+            </div>
+
+            <canvas
+                id="canvas"
+                width="800"
+                height="400">
+            </canvas>
+
+            <p id="descricao">
+                Escolha uma opção acima.
+            </p>
+
+        </section>
+
+
+        <!-- COTIDIANO -->
+        <section id="cotidiano">
+
+            <h2>🌎 A luz no cotidiano</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <span>📱</span>
+
+                    <h3>Celular</h3>
+
+                    <p>
+                        As telas emitem luz para formar imagens,
+                        textos e cores.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span>👓</span>
+
+                    <h3>Óculos</h3>
+
+                    <p>
+                        As lentes utilizam a refração da luz para
+                        auxiliar na correção da visão.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span>🚦</span>
+
+                    <h3>Semáforo</h3>
+
+                    <p>
+                        Utiliza diferentes cores de luz para
+                        transmitir informações.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span>☀️</span>
+
+                    <h3>Energia solar</h3>
+
+                    <p>
+                        Painéis solares utilizam a radiação solar
+                        para produzir energia elétrica.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz">
+
+            <h2>🧠 Quiz</h2>
+
+            <div class="quiz">
+
+                <div class="pergunta">
+
+                    <h3>
+                        1. O que acontece na reflexão?
+                    </h3>
+
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        A luz retorna ao meio de origem.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        A luz desaparece.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        A luz vira som.
+                    </label>
+
+                </div>
+
+
+                <div class="pergunta">
+
+                    <h3>
+                        2. Qual é aproximadamente a velocidade da luz?
+                    </h3>
+
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        300 km/s
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        3.000 km/s
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        300.000 km/s
+                    </label>
+
+                </div>
+
+
+                <div class="pergunta">
+
+                    <h3>
+                        3. Qual fenômeno forma o arco-íris?
+                    </h3>
+
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        Dispersão da luz.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Absorção.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Som.
+                    </label>
+
+                </div>
+
+
+                <button
+                    class="botao"
+                    onclick="corrigirQuiz()">
+
+                    Ver resultado
+
+                </button>
+
+                <div id="resultado"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h2>💡 Luz em Foco</h2>
+
+        <p>
+            Projeto de Física - Luz e suas propriedades
+        </p>
+
+        <p>
+            Integrantes:
+            ______________________________
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
